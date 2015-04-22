@@ -1,0 +1,25 @@
+class Enemy:
+    def __init__(self):
+        self.initial = 0
+
+    
+    def attack(self, amount=50):
+        self.initial -= amount
+        if self.initial < 0:
+            print "game over"
+            exit()
+
+    def health(self, amount=100):
+        self.initial += amount
+        return self.initial
+
+    def transfer(self,amount=10):
+        self.initial += amount
+        return self.initial
+        if self.initial > 0:
+            print "anda mendapatkan penambahan nyawa"
+
+ 
+        
+    
+   
